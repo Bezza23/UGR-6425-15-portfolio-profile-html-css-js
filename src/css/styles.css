@@ -113,7 +113,8 @@ header nav a{
     margin-bottom: 2em;
 }
 footer{
-    margin-left: 50em;
+    margin-left: 65em;
+    text-align: center;
 }
 footer>p{
     font-family:'Roboto Condensed';
@@ -128,6 +129,7 @@ footer img {
     height: 25px;
     border-radius: 50%;
     object-fit: cover; 
+    margin-left: -2px;
 }
 h1{
     font-family:'Roboto Condensed';
