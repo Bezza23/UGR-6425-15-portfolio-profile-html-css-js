@@ -1,22 +1,22 @@
 body{
     background: linear-gradient(to bottom, #883A7F, #966090);;
 }
-/* Base styles for the hamburger menu */
+
 .hamburger {
     font-size: 24px;
     cursor: pointer;
-    background-color: white; /* White background for the hamburger */
+    background-color: white; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    display: none; /* Hide by default */
-    color: black; /* Hamburger color */
+    display: none; 
+    color: black; 
 }
 
 .hamburger-menu {
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
-    top: 50px; /* Adjust to position below the hamburger */
+    top: 50px; 
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
@@ -27,7 +27,7 @@ body{
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: black; /* Link color */
+    color: black; 
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
@@ -166,28 +166,26 @@ figure img {
 }
 
 .french {
-    display: flex; /* Use flexbox */
-    align-items: flex-start; /* Align items at the start */
+    display: flex; 
+    align-items: flex-start; 
 }
 
 .french_container {
-    flex: 0 1 60%; /* Allow the container to grow but limit its width to 60% */
-    margin-right: 6em; /* Space between text and audio container */
+    flex: 0 1 60%; 
+    margin-right: 6em; 
 }
 
-
-
 audio {
-    flex-shrink: 0; /* Prevents audio from shrinking */
+    flex-shrink: 0; 
     width: 290px; 
-    height: 250px; /* Ensure height has units */
+    height: 250px; 
 }
 
 .caption {
-    margin-top: 1em; /* Space between audio and caption */
+    margin-top: 1em; 
     font-family: 'Roboto Condensed';
     font-size: 15px;
-    text-align: center; /* Center caption text */
+    text-align: center; 
 }
 
 .project_title{
@@ -273,34 +271,34 @@ tr:hover {
 
 .articles-container {
     display: flex;
-    justify-content: space-between; /* Adjusts space between articles */
-    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-    gap: 20px; /* Space between articles */
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .adventure-article {
     background-color: white;
-    display: flex; /* Flexbox for each article */
-    flex-direction: column; /* Stack grid vertically within the article */
-    flex: 1; /* Allows articles to take equal space */
-    min-width: 250px; /* Reduced minimum width */
-    max-width: 500px; /* Reduced maximum width */
+    display: flex; 
+    flex-direction: column;
+    flex: 1; 
+    min-width: 250px; 
+    max-width: 500px; 
 }
 
 .grid-container {
-    display: grid; /* Grid layout for text and image */
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 10px; /* Space between the grid items */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
 }
 
 .text-box {
-    padding: 10px; /* Add some padding */
+    padding: 10px; 
 }
 
 .img-container {
     display: flex;
-    justify-content: center; /* Centers the image within its container */
-    align-items: center; /* Vertically centers the image */
+    justify-content: center; 
+    align-items: center; 
 }
 
 #adventure_two img{
@@ -335,14 +333,14 @@ tr:hover {
 
     /* Show the hamburger menu */
     .hamburger {
-        display: block; /* Ensure the hamburger icon is visible */
-        margin-left: auto; /* Push it to the right */
+        display: block; 
+        margin-left: auto; 
     }
 
     header {
         display: flex; /* Use Flexbox */
-        justify-content: space-between; /* Space between logo and hamburger */
-        align-items: center; /* Vertically align items */
+        justify-content: space-between; 
+        align-items: center; 
         padding: 10px;
     }
 
@@ -370,9 +368,9 @@ tr:hover {
     }
 
     .img_container img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 0; /* Remove right margin */
+        width: 100%; 
+        height: auto; 
+        margin-right: 0; 
     }
 
     .last_part {
@@ -421,9 +419,9 @@ tr:hover {
     }
 
     .caption {
-        font-size: 12px; /* Adjust font size for caption */
-        text-align: center; /* Center the caption text */
-        margin-top: 5px; /* Optional: Add space between the audio and caption */
+        font-size: 12px; 
+        text-align: center; 
+        margin-top: 5px; 
     }
 
     table {
@@ -464,19 +462,19 @@ tr:hover {
     }
 
     .caption-adv {
-        width: 100%; /* Ensure caption takes full width */
-        text-align: center; /* Center the caption text */
-        margin-top: 10px; /* Optional: Add some spacing from the video */
+        width: 100%; 
+        text-align: center; 
+        margin-top: 10px; 
         margin-left: 0px;
-        font-size: 14px; /* Adjust font size for mobile */
-        color: #fff; /* Optional: change text color if needed */
+        font-size: 14px; 
+        color: #fff; 
     }
     .grid-container {
-        display: flex; /* Use Flexbox for layout */
-        justify-content: space-between; /* Space out the text and image */
-        max-height: 400px; /* Limit container height */
-        overflow: hidden; /* Prevent overflow */
-        height: 100%; /* Ensure the grid takes full height */
+        display: flex; 
+        justify-content: space-between; 
+        max-height: 400px; 
+        overflow: hidden; 
+        height: 100%; 
     }
     
     .grid-container .text {
@@ -810,8 +808,8 @@ tr:hover {
     }
 
     .audio-container audio {
-        width: 100%; /* Ensure the audio player stretches to fill the container */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
 
     .caption {
@@ -834,13 +832,13 @@ tr:hover {
     }
 
     .articles-container {
-        flex-direction: column; /* Stack articles */
+        flex-direction: column; 
         gap: 25px;
         align-items: center;
     }
 
     .adventure-article {
-        width: 90%; /* Limit article width */
+        width: 90%; 
         max-width: 400px;
     }
 
@@ -881,17 +879,17 @@ tr:hover {
     }
 
     .grid-container .image {
-        flex: 1; /* Take up 50% width */
+        flex: 1; 
         display: flex;
-        justify-content: center; /* Center the content horizontally */
-        align-items: center; /* Center the content vertically */
-        height: 100%; /* Ensure image container takes full height */
+        justify-content: center; 
+        align-items: center; 
+        height: 100%; 
     }
 
     .grid-container .image img {
-        width: 100%; /* Ensure the image fills the width of the container */
-        height: 100%; /* Ensure the image fills the height of the container */
-        object-fit: cover; /* Ensures the image scales without distortion */
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
     }
 }
 /* Tablet Landscape */
