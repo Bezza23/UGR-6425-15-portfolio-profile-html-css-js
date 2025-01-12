@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet">
     <title>Bezawit Girma</title>
 </head>
 <body>
@@ -10,6 +14,15 @@
         <div class="logo">
             <img src="/images/logo.jpg" alt="Logo" height="27" width="140">
         </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <a href="home.html">Home</a>
+            <a href="about_me.html">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="cv.html">CV</a>
+            <a href="adventures.html">Adventures</a>
+        </div>
+        <script src="/js/script.js"></script>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -24,21 +37,28 @@
         <h1>Hobbies</h1>
         <div class="hobbies">
             <article class="books">
-                <h3>Reading Self-Help Books</h3>
-                <p>One of my favorite hobbies is reading self-help books. I find that these books offer valuable insights and practical advice that can lead to personal growth and self-improvement. Each page is filled with strategies and techniques that inspire me to reflect on my own experiences and goals. I appreciate how self-help literature encourages a positive mindset and equips me with tools to navigate challenges in my life. From enhancing productivity to building resilience, these books have profoundly influenced my approach to both my personal and professional development. </p>
+                <div class="text_container">
+                    <h3>Reading Self-Help Books</h3>
+                    <p>One of my favorite hobbies is reading self-help books. I find that these books offer valuable insights and practical advice that can lead to personal growth and self-improvement. Each page is filled with strategies and techniques that inspire me to reflect on my own experiences and goals. I appreciate how self-help literature encourages a positive mindset and equips me with tools to navigate challenges in my life. From enhancing productivity to building resilience, these books have profoundly influenced my approach to both my personal and professional development. </p>
+                </div>
                 <figure>
                     <img src="/images/book.jpg" alt="Buy Yourself The Damn Flowers" height="400" width="300">
                     <figcaption></figcaption>
                 </figure>
             </article>
             <article class="french">
-                <h3>Learning French</h3>
-                <p>Learning French is a hobby that holds a special place in my heart, as I studied the language in school until the 8th grade. I often find myself daydreaming about wandering the charming streets of Paris with friends, soaking in the vibrant atmosphere and the rich culture. The thought of enjoying live jazz music at a cozy club while conversing with locals inspires me to improve my language skills. </p>
-                <audio controls>
-                    <source src="/audio/French.ogg">
-                </audio>
-                <p class="caption">A brief introduction: sharing my passions and interests</p>
-            </article>
+                <div class="french_container">
+                    <h3>Learning French</h3>
+                    <p>Learning French is a hobby that holds a special place in my heart...</p>
+                </div>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="/audio/French.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p class="caption">A brief introduction: sharing my passions and interests</p>
+                </div>
+            </article>            
         </div>
         <section class="interest_list">
             <h3>Other hobbies of mine</h3>

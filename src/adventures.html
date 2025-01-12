@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Bezawit Girma</title>
 </head>
 <body>
@@ -10,6 +13,18 @@
         <div class="logo">
             <img src="/images/logo.jpg" alt="Logo" height="27" width="140">
         </div>
+        <div class="hamburger-container">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <a href="home.html">Home</a>
+                <a href="about_me.html">About Me</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="cv.html">CV</a>
+                <a href="adventures.html">Adventures</a>
+            </div>
+        </div>
+        
+        <script src="/js/script.js"></script>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -25,27 +40,43 @@
         <div class="adventures">
             <article id="adventure_one">
                 <h3>A Day at Unity Park: Nature and Culture Combined</h3>
-                <p>I visited Unity Park, which turned out to be one of the most beautiful places I’ve ever experienced. As an animal lover, I was delighted to encounter a variety of adorable animals, each adding a sense of joy to my day. The park was also filled with stunning plants, and I enjoyed wandering along a picturesque walking path that was beautifully surrounded by towering trees. As I explored further, I discovered fascinating artifacts that reflect Ethiopia's rich history and culture. Each piece told a story, connecting me to the country’s heritage profoundly. </p>
-                <video controls width="500" height="300">
-                    <source src="/video/unitypark.MOV" type="video/mp4">
-                </video>
-                <p class="caption">A glimpse of wildlife and greenery at Unity Park</p>
-            </article>
-            <article id="adventure_two">
-                <h3>Adventures with Friends: Every Moment is an Adventure</h3>
-                <p>One of my favorite adventures is simply spending time with my friends, where every moment becomes an unforgettable experience. Whether exploring new places, trying out unique activities, or enjoying each other's company, our adventures are filled with laughter and joy. I cherish the way we can turn an ordinary day into something extraordinary, sharing stories and creating bonds that last a lifetime. To capture these moments, 
-                </p>
-                <div class="img_container1">
-                    <img src="/images/friends.jpg" alt="My Best Friends" height="400" width="650">
+                <div class="adventure_container">
+                    <p>I visited Unity Park, which turned out to be one of the most beautiful places I’ve ever experienced. As an animal lover, I was delighted to encounter a variety of adorable animals, each adding a sense of joy to my day. The park was also filled with stunning plants, and I enjoyed wandering along a picturesque walking path that was beautifully surrounded by towering trees. As I explored further, I discovered fascinating artifacts that reflect Ethiopia's rich history and culture. Each piece told a story, connecting me to the country’s heritage profoundly. </p>
+                    <video controls width="500" height="300">
+                        <source src="/video/unitypark.MOV" type="video/mp4">
+                    </video>
                 </div>
+                <p class="caption-adv">A glimpse of wildlife and greenery at Unity Park</p>
             </article>
-            <article id="adventure_three">
-                <h3>A Day of Adventure at Entoto Park</h3>
-                <div class="img_container2">
-                    <img src="/images/entoto.jpg" alt="Me at Entoto park" height="400" width="300">
-                </div>
-                <p>My third adventure took me to the stunning Entoto Park, where I enjoyed a day of hiking and outdoor activities with my family. I had the exhilarating experience of riding a horse and trying my hand at archery, which added a sense of adventure to our day. We indulged in delicious food and even ventured on the zip line, feeling the rush of adrenaline as we soared through the air. Playing paintball brought out our competitive spirits, and as we walked together, we shared stories and laughter, deepening our family bonds.. </p>
-            </article>   
+            <div class="articles-container">
+                <article class="adventure-article" id="adventure_two">
+                    <div class="grid-container">
+                        <div class="text-box">
+                            <h6>Adventures with Friends: Every Moment is an Adventure</h6>
+                            <p>
+                                One of my favorite adventures is simply spending time with my friends, where every moment becomes an unforgettable experience. Whether exploring new places, trying out unique activities, or enjoying each other's company, our adventures are filled with laughter and joy. I cherish the way we can turn an ordinary day into something extraordinary, sharing stories and creating bonds that last a lifetime.
+                            </p>
+                        </div>
+                        <div class="img-container">
+                            <img src="/images/friends.jpg" alt="My Best Friends" height="400" width="650">
+                        </div>
+                    </div>
+                </article>
+            
+                <article class="adventure-article" id="adventure_three">
+                    <div class="grid-container">
+                        <div class="text-box">
+                            <h6>A Day of Adventure at Entoto Park</h6>
+                            <p>
+                                My third adventure took me to the stunning Entoto Park, where I enjoyed a day of hiking and outdoor activities with my family. I had the exhilarating experience of riding a horse and trying my hand at archery, which added a sense of adventure to our day. We indulged in delicious food and even ventured on the zip line, feeling the rush of adrenaline as we soared through the air. Playing paintball brought out our competitive spirits, and as we walked together, we shared stories and laughter, deepening our family bonds.
+                            </p>
+                        </div>
+                        <div class="img-container">
+                            <img src="/images/entoto.jpg" alt="Me at Entoto Park" height="400" width="300">
+                        </div>
+                    </div>
+                </article>
+            </div>  
         </div>
     </main>
     <footer>
